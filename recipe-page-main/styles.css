@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body{
+    background-color: hsl(30, 54%, 90%);
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    font-family: "Outfit";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.main-container{
+    background-color: white;
+    width: 500px;
+    height: auto;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+span{
+    font-family: "young-serif";
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.Prep-time-container{
+    background-color: hsl(330, 100%, 98%);
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Prep-time-container *{
+    padding: 0px;
+    margin: 0px;
+}
+
+h1{
+    font-family: "young serif",sans-serif;
+    font-weight: 400;
+}
+
+.table-grid{
+    margin-top:20px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 10px;
+}
+
+.table-grid > div{
+    border-bottom: 2px solid,
+}
