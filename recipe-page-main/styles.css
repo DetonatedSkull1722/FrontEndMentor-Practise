@@ -9,7 +9,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: auto;
     width: 100vw;
     box-sizing: border-box;
     font-family: "Outfit";
@@ -25,8 +25,19 @@ body{
     border-radius: 20px;
 }
 
-span{
-    font-family: "young-serif";
+.Primary-content{
+    margin:0px;
+}
+
+.Prep{
+    font-weight: 600;
+}
+
+h4{
+    padding-bottom:10px;
+    margin: 10px 0px 0px 0px;
+    font-weight:600;
+    color: hsl(332, 51%, 32%);
 }
 
 img {
@@ -34,7 +45,8 @@ img {
     border-radius: 10px;
 }
 
-.Prep-time-container{
+.Preptime-container{
+    border-radius: 10px;
     background-color: hsl(330, 100%, 98%);
     padding: 5px 20px;
     display: flex;
@@ -42,9 +54,13 @@ img {
     align-items: flex-start;
 }
 
-.Prep-time-container *{
-    padding: 0px;
+.Preptime-container ul{
+    padding: 5px 40px 20px 40px;
     margin: 0px;
+}
+
+li{
+    padding-bottom: 10px;
 }
 
 h1{
@@ -57,9 +73,33 @@ h1{
     display:grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(4,1fr);
-    gap: 10px;
+    gap: 0px;
 }
 
-.table-grid > div{
-    border-bottom: 2px solid,
+
+.table-grid span{
+    padding: 20px;
+}
+
+hr{
+    border-color:hsl(330, 100%, 98%, 0.5);
+}
+
+.font-2{
+    color: hsl(14, 45%, 36%);
+}
+
+.Instructions span{
+    font-weight: 600;
+}
+
+.val span{
+    color: hsl(332, 51%, 32%);
+    font-weight: 600;
+}
+
+@media (max-width:500px){
+    .main-container{
+        width: auto;
+    }
 }
