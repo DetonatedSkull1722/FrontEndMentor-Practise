@@ -19,41 +19,52 @@
 
   <div class="main">
     <h1>Contact Us</h1>
+    <form action="#">
 
-    <div class="name-form-group form-group">
-      <input type="text" id="First-name" placeholder="Field is required">
-      <label for="First-name">First-name</label>
+      <div class="name">
+        <div class="firstName SICombo">
+          <span id="FNSpan">First Name *</span>
+          <input type="text" class="NameInput">
+        </div>
+        <div class="lastName SICombo">
+          <span id="LNSpan">Last Name *</span>
+          <input type="text" class="NameInput">
+        </div>
+      </div>
 
-      <input type="text" id="Last-name" placeholder="Field is required">
-      <label for="Last-name">Last-name</label>
-    </div> 
+      <div class="emailAddress SICombo">
+        <span id="EASpan">Email Address *</span>
+        <input type="text">
+      </div>
 
-    <div class="email-group-long form-group">
-    <input type="email" id="Email-address">
-    <label for="Email-address">Email Address</label>
-    </div>
+      <div class="queryType SICombo">
+        <span>Query Type</span>
+        <div class="QueryButtons">
+          <div class="generalEnquiry subQuery">
+            <input type="radio" name="Query">
+            <span>General Enquiry</span>
+          </div>
+          <div class="supportRequest subQuery">
+            <input type="radio" name="Query">
+            <span>Support-Request</span>
+          </div>
+        </div>
+      </div>
 
-    <div class="query-form-group form-group">
-      <input type="radio" id="General-Enquiry">
-      <label for="General-Enquiry">General-Enquiry</label>
+      <div class="Message SICombo">
+        <span class="MessageSpan">Message *</span>
+        <input id="MessageText" type="text">
+      </div>
 
-      <input type="radio" id="Support-Request">
-      <label for="Support-Request">Support-Request</label>
-    </div>
+      <div class="Consent">
+        <input type="checkbox" id="consentCheckbox">
+        <span id="ConsentSpan">I consent to being contacted by the team</span>
+      </div>
 
-    <div class="message-form-group form-group">
-      <input type="text" id="Message">
-      <label for="Message">Message *</label>
-    </div>
-
-    <div class="consent">
-      <input type="checkbox" id="Consent">
-      <label for="consent">I consent to being contacted by the team *</label>
-    </div>
-
-    <button type="Submit">Submit</button>
-
-    
+      <div class="submit">
+        <button id="Submit" type="submit">Submit</button>
+      </div>
+    </form>
   </div>
   
   <div class="attribution">

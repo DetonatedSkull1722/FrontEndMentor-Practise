@@ -11,8 +11,28 @@ body{
 
 .main{
     display: flex;
-    width: 60%;
-    height: 60%;
+    min-width: 40%;
+    max-width: 70%;
+    max-height: 70%;
     border: 2px solid black;
     flex-direction: column;
+    padding: 20px 30px;
+    box-sizing: border-box;
 }
+
+.SICombo{
+    display: flex;
+    flex-direction: column;
+}
+
+.name{
+    display: flex;
+    gap: 20px;
+}
+
+.QueryButtons{
+    display: flex;
+    justify-content: space-between;
+}
+
+
