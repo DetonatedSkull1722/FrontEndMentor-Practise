@@ -14,10 +14,10 @@ export default function App() {
       <img className="absolute -z-10 w-3/4 md:w-7/12 bottom-0 left-0" src={patternSquigglyBottom} alt="" />
       <img className="absolute -z-10 w-5/12 top-10 right-0" src={patternSquigglyTop} alt="" />
 
-      <section className="w-full flex align-center justify-center mt-5">
+      <section className="w-full flex item-center justify-center mt-5">
         <Header />
       </section>
-      <section className="w-full flex justify-center align-center">
+      <section classame="w-full flex flex-col justify-center item-center">
         <Description />
       </section>
       <section>

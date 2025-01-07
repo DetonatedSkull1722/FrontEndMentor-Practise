@@ -19,3 +19,11 @@
     src: url('./assets/fonts/static/Inconsolata-ExtraBold.ttf') format('truetype');
     font-weight: 800;
 }
+
+.FormLabel {
+    @apply w-full flex flex-col text-[0.5rem] text-[#ddd5d57b] mb-5;
+}
+
+.FormInput{
+    @apply w-full h-6 bg-opacity-10 bg-white placeholder-white placeholder-opacity-100 rounded-md text-white text-opacity-100 pl-2 text-xs py-2 font-[arial];
+}
