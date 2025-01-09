@@ -7,7 +7,7 @@ import iconPlus from '../assets/images/icon-plus.svg'
 import iconMinus from '../assets/images/icon-minus.svg'
 import iconCart from '../assets/images/icon-cart.svg'
 
-function MainSection() {
+function MainSection({number, setNumber}) {
 
   const [currentShownImage, setCurrentShownImage] = useState(images.product1)
   const activeThumbnailRef = useRef(null)
@@ -33,8 +33,8 @@ function MainSection() {
   };
 
   return (
-    <div className='border-2 w-9/12 flex gap-2 justify-center items-center'>
-      <div className='border-2 w-full h-full flex flex-col justify-center items-center gap-6 p-5'>
+    <div className=' w-9/12 flex gap-2 justify-center items-center'>
+      <div className=' w-full h-full flex flex-col justify-center items-center gap-6 p-5'>
         <div>
           <img src={currentShownImage} alt="" className='h-full w-auto rounded-lg'/>
         </div>
@@ -53,7 +53,7 @@ function MainSection() {
             </ul>
         </div>
       </div>
-      <div className='border-2 w-full h-full'>
+      <div className='w-full h-full'>
         <h3 className='text-xs font-inconsolata font-black tracking-widest text-gray-500 mb-2'>SNEAKER COMPANY</h3>
         <h1 className='text-6xl font-sans tracking-tighter font-bold mb-4'>Fall Limited
           <br /> 
@@ -62,15 +62,17 @@ function MainSection() {
 
         <h2 className='mt-6 text-lg font-bold'>$125.00</h2>
         <h3 className='line-through opacity-50 font-bold text-xs'>$250.00</h3>
-        <div>
-          <button><img src={iconMinus} alt="" /></button>
-          number
-          <button><img src={iconPlus} alt="" /></button>
+        <div className='flex mt-6'>
+          <div className='flex bg-gray-200 w-28 h-10 justify-between px-2 rounded-lg items-center'>
+            <button onClick={() => setNumber(number => number - 1)}><img src={iconMinus} alt="" className='opacity-60'/></button>
+            <p className='text-sm font-bold font-inconsolata'>{number}</p>
+            <button onClick={() => setNumber(number => number + 1)}><img src={iconPlus} alt="" className='opacity-60'/></button>
+          </div>
+          <button className='flex items-center justify-center bg-orange-400 bg-opacity-70 text-black w-44 h-10 rounded-lg ml-4 font-bold text-[0.75rem] font-inconsolata tracking-tighter'>
+            <img src={iconCart} alt="" className='w-5 mr-4'/>
+            Add to cart
+          </button>
         </div>
-        <button>
-          <img src="" alt="" />
-          Add to cart
-        </button>
       </div>
     </div>
   )
