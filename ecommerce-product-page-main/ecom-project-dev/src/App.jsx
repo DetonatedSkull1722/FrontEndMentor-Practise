@@ -5,10 +5,14 @@ import { useState } from 'react';
 
 export default function App() {
    const [number, setNumber] = useState(0)
-  return (
+
+   return (
     <main className='flex items-center flex-col'>
       
-      <Navigation/>
+      <Navigation
+        number={number}
+        setNumber={setNumber}
+      />
       <Main 
         number={number}
         setNumber={setNumber}
